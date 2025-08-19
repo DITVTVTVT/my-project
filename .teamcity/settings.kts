@@ -105,6 +105,14 @@ object JavaApp : BuildType({
             }
         }
     }
+
+    dependencies {
+        add(RelativeId("ServiceFabricHttpApiClient_Build")) {
+            snapshot {
+            }
+        }
+
+    }
 })
 
 
