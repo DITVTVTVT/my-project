@@ -32,9 +32,13 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2025.07"
 
 project {
-    description = "My pet progects"
+    description = "My pet projects"
 
     buildType(JavaApp)
+
+    sequential {
+
+    }
 
     features {
         dockerRegistry {
@@ -47,6 +51,8 @@ project {
 
     subProject(ServiceFabricHttpApiClient)
 }
+
+
 
 object JavaApp : BuildType({
     name = "Java App"
